@@ -16,6 +16,7 @@ classifiers = [
     
 ]
 dependencies = [
+    # Devtools
     "loguru",
     "mkdocs",
     "pip",
@@ -24,9 +25,34 @@ dependencies = [
     "ruff",
     "tqdm",
     "typer",
+    "pre-commit",
+    # Core ML / pipeline tools
+    "scikit-learn",
+    "xgboost",
+    "polars",
+    "pandas",
+    "numpy",
+    # # Core Deep Learning Libraries
+    "torch",  # PyTorch
+    "torchvision",  # PyTorch Vision
+    "torchaudio",  # PyTorch Audio
+    # Hyperparameter tuning
+    "optuna",
+    # Visualization
+    "plotly",
+    "matplotlib",
+    "seaborn", 
 ]
 requires-python = "~=3.10.0"
 
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu" }]
+torchvision = [{ index = "pytorch-cpu" }]
 
 [tool.ruff]
 line-length = 99
@@ -39,4 +65,5 @@ extend-select = ["I"]  # Add import sorting
 [tool.ruff.lint.isort]
 known-first-party = ["src"]
 force-sort-within-sections = true
+
 
