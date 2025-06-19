@@ -26,22 +26,30 @@ dependencies = [
     "tqdm",
     "typer",
     "pre-commit",
+    "pyarrow",
+    "fastparquet",
     # Core ML / pipeline tools
-    "scikit-learn",
+    "numpy==1.25.0",
+    "pandas==1.5.3",
+    "scikit_learn==1.2.2",
     "xgboost",
     "polars",
-    "pandas",
-    "numpy",
-    # # Core Deep Learning Libraries
-    "torch",  # PyTorch
-    "torchvision",  # PyTorch Vision
-    "torchaudio",  # PyTorch Audio
+    "scipy==1.10.1",
+    "BaselineRemoval==0.1.4",
+    "biosppy==1.0.0",
+    # # # Core Deep Learning Libraries
+    # "torch",  # PyTorch
+    # "torchvision",  # PyTorch Vision
+    # "torchaudio",  # PyTorch Audio
     # Hyperparameter tuning
     "optuna",
     # Visualization
     "plotly",
-    "matplotlib",
-    "seaborn", 
+    "matplotlib==3.7.1",
+    "seaborn==0.12.2",
+    "pyppg",
+    "joblib",
+    "nbformat",
 ]
 requires-python = "~=3.10.0"
 
