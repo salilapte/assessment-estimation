@@ -29,27 +29,25 @@ dependencies = [
     "pyarrow",
     "fastparquet",
     # Core ML / pipeline tools
-    "numpy==1.25.0",
-    "pandas==1.5.3",
-    "scikit_learn==1.2.2",
+    "numpy",
+    "pandas",
+    "scikit_learn",
     "xgboost",
     "polars",
-    "scipy==1.10.1",
-    "BaselineRemoval==0.1.4",
-    "biosppy==1.0.0",
-    # # # Core Deep Learning Libraries
-    # "torch",  # PyTorch
-    # "torchvision",  # PyTorch Vision
-    # "torchaudio",  # PyTorch Audio
+    "scipy",
+    "BaselineRemoval",
+    "biosppy",
     # Hyperparameter tuning
     "optuna",
     # Visualization
     "plotly",
-    "matplotlib==3.7.1",
-    "seaborn==0.12.2",
-    "pyppg",
+    "matplotlib",
+    "seaborn",
+    "pyppg==1.0.41",
     "joblib",
     "nbformat",
+    "ipykernel",
+    "dotmap",
 ]
 requires-python = "~=3.10.0"
 

@@ -212,7 +212,7 @@ def main(
     # Transform into a pandas dataframe
     features_df = pd.DataFrame(features, columns=feature_names)
     
-    # Should be (60000, 900) for training and (30000, 900) for test data
+    # Should be (60000, 919) for training and (30000, 919) for test data
     print(features_df.shape)      
     # Check if "sqi" is at the end
     print(features_df.columns[-5:])
